@@ -1,1 +1,5 @@
-<p>hello world</p>
+<script>
+  import SimpleCV from './views/SimpleCV.svelte';
+</script>
+
+<SimpleCV />
