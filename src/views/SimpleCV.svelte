@@ -24,17 +24,36 @@
 </script>
 
 <style>
+  @media only screen and (max-width: 5000px) {
+    .page {
+      font-size: 1.5em;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .page {
+      font-size: 1em;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .page {
+      font-size: 0.7em;
+    }
+  }
+
   .page {
+    color: white;
+    /* font-size: 1.5em; */
+    /* -webkit-text-stroke: 1px black; */
     background-position: center, center;
     background-size: 40vmax, 100vmax;
     background-repeat: no-repeat, no-repeat;
-    background-color: rgb(229, 244, 245);
+    background-color: rgb(18, 102, 201);
     background-image: url('../images/404.png'),
       radial-gradient(
         circle,
-        rgba(229, 244, 245, 1) 0%,
-        rgba(229, 229, 238, 1) 35%,
-        rgba(115, 132, 136, 1) 100%
+        rgba(18, 102, 201, 1) 60%,
+        rgba(22, 53, 112, 1) 100%
       );
     width: 100vw;
     height: 100vh;
@@ -46,12 +65,7 @@
   .container {
     /* display: none; */
     margin-top: 3vh;
-    background: rgb(198, 198, 198);
-    background: linear-gradient(
-      90deg,
-      rgba(198, 198, 198, 1) 0%,
-      rgba(238, 238, 238, 1) 15%
-    );
+    background-color: #feca1f;
     width: 70vw;
     height: 94vh;
     border-radius: 20px;
@@ -75,15 +89,17 @@
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    left: 15%;
-    width: 70%;
-    background-color: #eeeeee;
+    left: 10%;
+    width: 80%;
+    background-color: #feca1f;
     justify-content: center;
   }
 
   h1.main_title {
     display: inline;
-    font-family: 'Great Vibes', cursive;
+    /* font-family: 'Great Vibes', cursive; */
+    font-family: 'Slackey', cursive;
+    font-size: 1.2em;
   }
 
   .logo {
@@ -114,6 +130,8 @@
 
   .slider a:hover {
     font-weight: bold;
+    color: #1266c9;
+    -webkit-text-stroke: 1px #1266c9;
   }
 
   /* .slider > div:last-child {
@@ -175,21 +193,21 @@
   }
 
   .bullet:hover {
-    background-color: #c8c8c8;
-    border-color: #c8c8c8;
+    background-color: #1266c9;
+    border-color: #1266c9;
   }
 
   .bullet:focus,
   .bullet:checked {
-    background-color: lightgray;
-    border-color: lightgray;
+    background-color: #163570;
+    border-color: #163570;
   }
 </style>
 
 <div class="page">
   <div class="container">
     <div class="title">
-      <img class="logo" src="/images/sarended_light.svg" alt="sarended logo" />
+      <img class="logo" src="/images/sarended_dark.svg" alt="sarended logo" />
       <h1 class="main_title">Saeed Raisi</h1>
     </div>
     <div class="bullet_pack">
