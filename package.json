@@ -1,6 +1,7 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "name": "sarended",
+  "version": "0.2.0",
+  "homepage":"http://sarended.ir",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
